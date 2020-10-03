@@ -652,4 +652,5 @@ only screen and (                min-resolution: 2dppx) {
   }
   .work-list-item:nth-child(5)::before {
   background-image: url("../img/step-say@2x.png");
+  }
 }
