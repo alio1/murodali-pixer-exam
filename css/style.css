@@ -554,6 +554,14 @@ select {
   line-height: 150%;
   text-decoration: none;
   margin-bottom: 10px;
+  transition: color 0.4s ease;
+}
+.footer-column-link:hover {
+  color: #00BAFC;
+}
+.footer-column-link:active {
+  color: #00BAFC;
+  opacity: 0.6;
 }
 .footer-column-social {
   display: flex;
@@ -628,5 +636,4 @@ only screen and (                min-resolution: 2dppx) {
   }
   .work-list-item:nth-child(5)::before {
   background-image: url("../img/step-say@2x.png");
-  }
 }
