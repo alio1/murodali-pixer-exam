@@ -300,6 +300,12 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: center center;
   margin: 0 auto 16px auto;
 }
+.services-list-item:hover {
+  box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+}
+.services-list-item:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
 .services-links {
   display: flex;
   justify-content: center;
@@ -555,6 +561,7 @@ select {
   text-decoration: none;
   margin-bottom: 10px;
   transition: color 0.4s ease;
+  display: flex;
 }
 .footer-column-link:hover {
   color: #00BAFC;
@@ -566,7 +573,7 @@ select {
 .footer-column-social {
   display: flex;
 }
-.footer-column-social:nth-child(1)::before {
+.footer-column-telegrem::before {
   content: "";
   width: 22px;
   height: 24px;
@@ -577,7 +584,10 @@ select {
   display: block;
   margin-right: 8px;
 }
-.footer-column-social:nth-child(2)::before {
+.footer-column-telegrem::before:active {
+  opacity: 0.6;
+}
+.footer-column-facebook::before {
   content: "";
   width: 22px;
   height: 24px;
@@ -588,7 +598,10 @@ select {
   display: block;
   margin-right: 8px;
 }
-.footer-column-social:nth-child(3)::before {
+.footer-column-facebook::before:active {
+  opacity: 0.6;
+}
+.footer-column-instagram::before {
   content: "";
   width: 22px;
   height: 24px;
@@ -598,6 +611,9 @@ select {
   background-size: contain;
   display: block;
   margin-right: 8px;
+}
+.footer-column-instagram::before:active {
+  opacity: 0.6;
 }
 
 @media
